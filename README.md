@@ -56,7 +56,6 @@ ConnectionString connectionString = new ConnectionString(conex);
 
 ## Autores
 - Jesus Andres Gomez Rodriguez
-- Pablo Romo Grilo
 
 ## Licencia
 Este proyecto se distribuye bajo la licencia [MIT](LICENSE).
