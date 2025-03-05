@@ -25,20 +25,29 @@ Mongo/
 ├── pom.xml               # Archivo de configuración de Maven
 ```
 
-## Instalación y Ejecución
-1. **Clonar el repositorio**
-   ```sh
-   git clone <URL_DEL_REPOSITORIO>
-   cd Mongo
-   ```
-2. **Configurar MongoDB**
-   - Asegúrate de tener MongoDB instalado y en ejecución.
-   - Configura la conexión en `Conex.java` si es necesario.
-3. **Compilar y ejecutar**
-   ```sh
-   mvn clean install
-   mvn exec:java -Dexec.mainClass="examples.AppPrincipal"
-   ```
+## Configuración
+
+Antes de ejecutar los ejemplos, asegúrate de haber configurado correctamente la conexión a la base de datos MongoDB en la clase `Conex.java`. Debes proporcionar la URL de conexión, el nombre de la base de datos y la colección que se utilizará.
+
+```java
+private static String conex = "mongodb+srv://usuario:contraseña@servidor.mongodb.net/";
+private static String databaseName = "NombreBaseDeDatos";
+private static String collectionName = "NombreColeccion";
+
+ConnectionString connectionString = new ConnectionString(conex);
+
+		MongoClientSettings clientSettings = MongoClientSettings.builder().applyConnectionString(connectionString)
+				.codecRegistry(codecRegistry).build();
+
+		// Creamos el cliente MongoDB
+		MongoClient mongoClient = MongoClients.create(clientSettings);
+
+		// Recuperar base de datos
+		db = mongoClient.getDatabase(databaseName);
+
+        // Recuperar coleccion
+		collection = db.getCollection(collectionName);
+```
 
 ## Funcionalidades
 - Conexión con MongoDB para almacenamiento de datos.
