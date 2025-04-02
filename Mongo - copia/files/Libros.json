@@ -1,0 +1,136 @@
+[
+        {
+            "autor": "Homero",
+            "editorial": "N/A",
+            "nombre": "La Odisea",
+            "precio": 11.99,
+            "foto": "https://images.cdn1.buscalibre.com/fit-in/360x360/3b/7e/3b7ee2ebcdc03bedc4cc58a617f8a86b.jpg"
+        },
+        {
+            "autor": "Gabriel García Márquez",
+            "editorial": "Sudamericana",
+            "nombre": "Cien años de soledad",
+            "precio": 20.99,
+            "foto": "https://images.cdn3.buscalibre.com/fit-in/360x360/61/8d/618d227e8967274cd9589a549adff52d.jpg"
+        },
+        {
+            "autor": "J. R. R. Tolkien",
+            "editorial": "Minotauro",
+            "nombre": "El señor de los anillos (Trilogía)",
+            "precio": 35.50,
+            "foto": "https://images.cdn1.buscalibre.com/fit-in/360x360/af/46/af46af9385636b0e1744507a6a163d0a.jpg"
+        },
+        {
+            "autor": "George Orwell",
+            "editorial": "Secker & Warburg",
+            "nombre": "1984",
+            "precio": 15.00,
+            "foto": "https://images.cdn2.buscalibre.com/fit-in/360x360/64/94/6494ccbadf2c2a31092c55cbde847029.jpg"
+        },
+        {
+            "autor": "Aldous Huxley",
+            "editorial": "Chatto & Windus",
+            "nombre": "Un mundo feliz",
+            "precio": 18.75,
+            "foto": "https://images.cdn2.buscalibre.com/fit-in/360x360/2e/5f/2e5f0fd063240afc8c687c48f8a3d580.jpg"
+        },
+        {
+            "autor": "Jane Austen",
+            "editorial": "T. Egerton",
+            "nombre": "Orgullo y prejuicio",
+            "precio": 12.99,
+            "foto": "https://images.cdn2.buscalibre.com/fit-in/360x360/dd/e5/dde58c57ce2567a66cb722a51c05c883.jpg"
+        },
+        {
+            "autor": "Fiódor Dostoyevski",
+            "editorial": "The Russian Messenger",
+            "nombre": "Crimen y castigo",
+            "precio": 22.00,
+            "foto": "https://images.cdn3.buscalibre.com/fit-in/360x360/77/ca/77ca0360c9719118fe154a78de3cccc4.jpg"
+        },
+        {
+            "autor": "Vladimir Nabokov",
+            "editorial": "Olympia Press",
+            "nombre": "Lolita",
+            "precio": 24.00,
+            "foto": "https://images.cdn3.buscalibre.com/fit-in/360x360/0f/b5/0fb582c596c8701fe79db731e07e7524.jpg"
+        },
+        {
+            "autor": "James Joyce",
+            "editorial": "Shakespeare and Company",
+            "nombre": "Ulises",
+            "precio": 30.50,
+            "foto": "https://images.cdn1.buscalibre.com/fit-in/360x360/3e/52/3e52fdec973b5d2841ff81e9bfe20bee.jpg"
+        },
+        {
+            "autor": "Gustave Flaubert",
+            "editorial": "Revue de Paris",
+            "nombre": "Madame Bovary",
+            "precio": 17.99,
+            "foto": "https://images.cdn2.buscalibre.com/fit-in/360x360/d1/fc/d1fcaedb7643ce7f49e19e1ee1238c95.jpg"
+        },
+        {
+            "autor": "Marcel Proust",
+            "editorial": "Grasset & Gallimard",
+            "nombre": "En busca del tiempo perdido",
+            "precio": 25.00,
+            "foto": "https://images.cdn2.buscalibre.com/fit-in/360x360/04/0b/040bfd4a2227338020431d81c7d3c121.jpg"
+        },
+        {
+            "autor": "Miguel de Cervantes.",
+            "editorial": "Francisco de Robles",
+            "nombre": "Don Quijote de la Mancha",
+            "precio": 19.99,
+            "foto": "https://images.cdn2.buscalibre.com/fit-in/360x360/fa/9e/fa9e5a2e42c4923ec4bcfcc194be8b2a.jpg"
+        },
+        {
+            "autor": "Oscar Wilde",
+            "editorial": "Lippincott's Monthly Magazine",
+            "nombre": "El retrato de Dorian Gray",
+            "precio": 16.50,
+            "foto": "https://images.cdn2.buscalibre.com/fit-in/360x360/dc/e1/dce198d6b6a8f44e3d47738a8d146ce3.jpg"
+        },
+        {
+            "autor": "León Tolstói",
+            "editorial": "The Russian Messenger",
+            "nombre": "Ana Karenina",
+            "precio": 21.00,
+            "foto": "https://images.cdn3.buscalibre.com/fit-in/360x360/b0/e9/b0e90d0a5c9d9f036ce0c2b167bc3f2e.jpg"
+        },
+        {
+            "autor": "Antoine de Saint-Exupéry.",
+            "editorial": "Reynal & Hitchcock",
+            "nombre": "El Principito",
+            "precio": 14.99,
+            "foto": "https://images.cdn1.buscalibre.com/fit-in/360x360/0f/17/0f178aab339f3fd7b764d30a7ccc9afc.jpg"
+        },
+        {
+            "autor": "Franz Kafka",
+            "editorial": "Verlag Die Schmiede",
+            "nombre": "El proceso",
+            "precio": 18.00,
+            "foto": "https://images.cdn1.buscalibre.com/fit-in/360x360/27/48/27481a7676eb79da547c647845b81f38.jpg"
+        },
+        {
+            "autor": "William Faulkner",
+            "editorial": "Jonathan Cape and Harrison Smith",
+            "nombre": "El ruido y la furia",
+            "precio": 20.50,
+            "foto": "https://images.cdn1.buscalibre.com/fit-in/360x360/73/d0/73d02d203af81ca856a30cfab83af862.jpg"
+        },
+        {
+            "autor": "William Shakespeare",
+            "editorial": "N/A",
+            "nombre": "Hamlet",
+            "precio": 13.75,
+            "foto": "https://images.cdn1.buscalibre.com/fit-in/360x360/00/f9/00f95a399a2326e0904d90a0e49c747d.jpg"
+        },
+        {
+            "autor": "Margaret Mitchell.",
+            "editorial": "Macmillan Publishers",
+            "nombre": "Lo que el viento se llevó",
+            "precio": 23.00,
+            "foto": "https://images.cdn2.buscalibre.com/fit-in/360x360/0d/51/0d513cf67ac3461fd0da21c25efb1a5a.jpg"
+        }
+]
+
