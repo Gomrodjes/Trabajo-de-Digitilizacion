@@ -1,61 +1,108 @@
-# Proyecto: Aplicación Java con MongoDB
 
-## Descripción
-Este proyecto es una aplicación Java que se conecta a una base de datos MongoDB y permite gestionar usuarios y libros. Incluye una interfaz gráfica y funcionalidad para importar libros desde un archivo JSON.
+# 📚 Book Manager - Sistema de Gestión de Libros
 
-## Tecnologías utilizadas
-- **Java** (JDK 11 o superior)
-- **MongoDB** (NoSQL database)
-- **Maven** (Gestor de dependencias)
-- **Gson** (Para manejar JSON)
-- **JGoodies & MigLayout** (Para la interfaz gráfica)
+**Book Manager** es una aplicación desarrollada en Java con el objetivo de digitalizar y simplificar la gestión de una colección de libros, ya sea en el contexto de una biblioteca o una tienda. Esta herramienta permite visualizar, agregar y gestionar libros almacenados en un archivo JSON, ofreciendo una interfaz gráfica amigable al usuario.
 
-## Estructura del Proyecto
+---
+
+## 🧩 Resumen del Proyecto
+
+Este proyecto nace como parte de una iniciativa de digitalización, buscando trasladar procesos tradicionales de gestión de inventarios de libros a una solución informática moderna, eficiente y accesible.
+
+Book Manager se centra en:
+- Visualizar los libros disponibles en un formato claro.
+- Gestionar el stock de libros desde un entorno gráfico.
+- Facilitar futuras integraciones con bases de datos externas.
+- Fomentar el uso de tecnologías como Java, JSON, Docker y Git en proyectos educativos o de pequeña escala.
+
+---
+
+## 🛠️ Tecnologías y Entornos de Desarrollo
+
+- **Lenguaje principal**: Java 17
+- **Entorno de desarrollo**: Eclipse IDE
+- **Interfaz gráfica**: Java Swing
+- **Persistencia de datos**: Archivos JSON
+- **Contenerización (opcional)**: Docker
+- **Control de versiones**: Git
+- **Sistema operativo**: Windows 10/11
+
+---
+
+## 🗂️ Estructura del Proyecto
+
+```plaintext
+📁 Digitalizacion Trabajo/
+├── 📁 bin/                   # Archivos compilados (.class)
+├── 📁 img/                   # Imágenes usadas en la interfaz gráfica
+├── 📁 json/                  # Archivo JSON con la base de datos de libros
+│   └── libros.json
+├── 📁 src/                   # Código fuente
+│   ├── 📄 App.java           # Clase principal
+│   ├── 📄 Book.java          # Clase para representar libros
+│   ├── 📄 BookManager.java   # Lógica de negocio
+│   ├── 📄 JsonHandler.java   # Lectura y escritura del JSON
+│   └── 📄 BookGUI.java       # Interfaz gráfica Swing
+├── 📄 Dockerfile (opcional)
+├── 📄 README.md              # Documento descriptivo
+└── 📄 .gitignore
 ```
-Mongo/
-├── src/main/java/examples/
-│   ├── AppPrincipal.java  # Punto de entrada de la aplicación
-│   ├── Conex.java         # Manejo de conexión con MongoDB
-│   ├── CrearUsuarios.java # Lógica para crear usuarios
-│   ├── Usuario.java       # Clase modelo para usuarios
-│   ├── ImportarLibros.java # Importación de libros desde JSON
-│   ├── Libro.java         # Clase modelo para libros
-│   ├── ImgJFrame.java, Inicio.java, Nuevo.java # Componentes de la interfaz gráfica
-├── files/Libros.json      # Archivo JSON con datos de libros
-├── pom.xml               # Archivo de configuración de Maven
-```
 
-## Configuración
+---
 
-Antes de ejecutar los ejemplos, asegúrate de haber configurado correctamente la conexión a la base de datos MongoDB en la clase `Conex.java`. Debes proporcionar la URL de conexión, el nombre de la base de datos y la colección que se utilizará.
+## 🧠 Principales Funcionalidades
 
-```java
-private static String conex = "mongodb+srv://usuario:contraseña@servidor.mongodb.net/";
-private static String databaseName = "NombreBaseDeDatos";
-private static String collectionName = "NombreColeccion";
+- 📄 **Carga dinámica de libros** desde un archivo `JSON`.
+- 🧭 **Interfaz gráfica amigable** con botones, iconos y paneles de navegación.
+- 🔄 **Actualización en tiempo real** de los datos visualizados.
+- 🖼️ **Visualización de portadas** de libros desde URLs (si están disponibles).
+- 🔧 **Modularidad en el código** para facilitar ampliaciones o mantenimiento.
 
-ConnectionString connectionString = new ConnectionString(conex);
+---
 
-		MongoClientSettings clientSettings = MongoClientSettings.builder().applyConnectionString(connectionString)
-				.codecRegistry(codecRegistry).build();
+## 🪄 Ejecución del Proyecto
 
-		// Creamos el cliente MongoDB
-		MongoClient mongoClient = MongoClients.create(clientSettings);
+### 🔹 Desde el entorno Eclipse
 
-		// Recuperar base de datos
-		db = mongoClient.getDatabase(databaseName);
+1. Importa el proyecto como *Java Project*.
+2. Asegúrate de tener Java 17 instalado.
+3. Ejecuta `App.java` como aplicación Java.
 
-        // Recuperar coleccion
-		collection = db.getCollection(collectionName);
-```
+### 🔹 Desde Docker (opcional)
 
-## Funcionalidades
-- Conexión con MongoDB para almacenamiento de datos.
-- Importación de datos desde archivos JSON.
-- Interfaz gráfica para gestionar usuarios y libros.
+1. Asegúrate de tener Docker instalado.
+2. Construye la imagen:
+   ```bash
+   docker build -t book-manager .
+   ```
+3. Ejecuta el contenedor:
+   ```bash
+   docker run -it book-manager
+   ```
 
-## Autores
-- Jesus Andres Gomez Rodriguez
+> Nota: Se puede montar un volumen para mantener el archivo `libros.json` persistente fuera del contenedor.
 
-## Licencia
-Este proyecto se distribuye bajo la licencia [MIT](LICENSE).
+---
+
+## 🚀 Posibles Mejoras Futuras
+
+- 📦 Integrar MongoDB o PostgreSQL para una gestión más robusta de los datos.
+- 🌐 Añadir funcionalidades de búsqueda y filtrado avanzado.
+- 👥 Implementar gestión de usuarios para bibliotecarios y clientes avanzado.
+- ☁️ Implementar acceso a través de web (con Spring Boot y API REST).
+- 🧪 Añadir pruebas automatizadas con JUnit.
+- 🛡️ Validar los datos de entrada del usuario con un sistema de formularios más seguro.
+
+---
+
+## 🧾 Créditos
+
+Este proyecto ha sido desarrollado como parte de un trabajo académico sobre digitalización y modernización de procesos. Todas las imágenes utilizadas tienen fines ilustrativos y educativos.
+
+---
+
+## 📬 Contacto
+
+Si deseas más información sobre este proyecto o estás interesado en colaborar:
+
+**Autor**: Jesus Andres Gomez Rodriguez    
