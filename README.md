@@ -33,19 +33,29 @@ Book Manager se centra en:
 
 ```plaintext
 📁 Digitalizacion Trabajo/
-├── 📁 bin/                   # Archivos compilados (.class)
-├── 📁 img/                   # Imágenes usadas en la interfaz gráfica
-├── 📁 json/                  # Archivo JSON con la base de datos de libros
+├── 📁 bin/                             # Archivos compilados (.class)
+├── 📁 img/                             # Imágenes usadas en la interfaz gráfica
+├── 📁 json/                            # Archivo JSON con la base de datos de libros
 │   └── libros.json
-├── 📁 src/                   # Código fuente
-│   ├── 📄 App.java           # Clase principal
-│   ├── 📄 Book.java          # Clase para representar libros
-│   ├── 📄 BookManager.java   # Lógica de negocio
-│   ├── 📄 JsonHandler.java   # Lectura y escritura del JSON
-│   └── 📄 BookGUI.java       # Interfaz gráfica Swing
+├── 📁 src/                             # Código fuente
+│   └── 📁 main/
+│       └── 📁 java/
+│           └── 📁 examples/
+│               ├── 📄 AppPrincipal.java      # Punto de entrada principal de la aplicación
+│               ├── 📄 ConexA.java            # Clase de conexión a la base de datos (tipo Admin)
+│               ├── 📄 ConexNA.java           # Clase de conexión a la base de datos (tipo No Admin)
+│               ├── 📄 CrearUsuarios.java     # Lógica para crear nuevos usuarios
+│               ├── 📄 ImgJFrame.java         # Ventana que muestra imágenes en la interfaz gráfica
+│               ├── 📄 ImportarLibros.java    # Importa libros desde un archivo JSON
+│               ├── 📄 Inicio.java            # Pantalla o menú inicial de la aplicación
+│               ├── 📄 Libro.java             # Clase que representa un libro (modelo de datos)
+│               ├── 📄 Nuevo.java             # Ventana o panel para añadir nuevos libros o entradas
+│               ├── 📄 Sugerencia.java        # Gestión de sugerencias o recomendaciones de libros
+│               └── 📄 Usuario.java           # Clase que representa un usuario (modelo de datos)
 ├── 📄 Dockerfile (opcional)
-├── 📄 README.md              # Documento descriptivo
+├── 📄 README.md                          # Documento descriptivo
 └── 📄 .gitignore
+
 ```
 
 ---
