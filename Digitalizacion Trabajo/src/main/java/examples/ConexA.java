@@ -51,7 +51,7 @@ public class ConexA extends JFrame {
 	private JLabel seleccionLabel;
 	private static MongoDatabase db;
 	private static List<Libro> libros;
-	private static List<Libro> librossugerencias;
+  	private static List<Libro> librosSugerencias;
 
 	public ConexA() {
 		super("Menú Principal");
@@ -189,12 +189,12 @@ public class ConexA extends JFrame {
 
 				MongoCollection<Libro> collectionLibro2 = db.getCollection(collectionName2, Libro.class);
 				MongoCursor<Libro> resultDocument2 = collectionLibro2.find().iterator();
-				libros = new ArrayList<>();
+				librosSugerencias = new ArrayList<>();
 				while (resultDocument2.hasNext()) {
 					Libro libro = resultDocument2.next();
-					libros.add(libro);
+					librosSugerencias.add(libro);
 				}
-				for (Libro libro : libros) {
+				for (Libro libro : librosSugerencias) {
 					comboSugerencias.addItem(libro.getNombre());
 				}
 
@@ -314,6 +314,3 @@ public class ConexA extends JFrame {
 		}
 	}
 }
-
-
-
